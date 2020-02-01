@@ -13,7 +13,7 @@ ENV MAILHOGSERVER mailhog
 ## Installation des utilitaires de base
 RUN apt-get update && apt-get -y install software-properties-common supervisor
 RUN apt-get update && apt-get -y install language-pack-en
-RUN apt-get update && apt-get -y install wget tzdata curl zip
+RUN apt-get update && apt-get -y install wget tzdata curl zip rsync
 RUN apt-get clean && apt-get update && apt-get install -y locales
 RUN locale-gen fr_FR.UTF-8
 
